@@ -1,0 +1,20 @@
+<div class="auth-container">
+  <div class="auth-box">
+    <img src="image.webp" alt="ENSET Logo">
+    <h2>{{ isLoginMode ? 'Sign In' : 'Sign Up' }}</h2>
+    
+    <form (ngSubmit)="isLoginMode ? login() : signup()">
+      <div *ngIf="!isLoginMode">
+        <input type="text" placeholder="Name" [(ngModel)]="username" name="username" required />
+      </div>
+      <input type="email" placeholder="Login" [(ngModel)]="email" name="email" required />
+      <input type="password" placeholder="Password" [(ngModel)]="password" name="password" required />
+      
+      <button type="submit">{{ isLoginMode ? 'Sign In' : 'Sign Up' }}</button>
+    </form>
+
+    <a href="#" class="auth-link" (click)="toggleMode($event)">
+      {{ isLoginMode ? 'New User? Click to sign up !!' : 'Already registered? Click to sign in !!' }}
+    </a>
+  </div>
+</div>

@@ -1,0 +1,52 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f6fafd;
+  color: black;
+  padding: 25px 40px;
+  width: 100%;
+  box-sizing: border-box;
+  height: 150px;
+}
+.logo img {
+  height: 90px; /* Ajustez la taille selon vos besoins */
+  width: auto; /* Conservez le ratio de l'image */
+}
+
+.navbar .logo {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 5px; /* Espace entre le bouton et le logo */
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.logout-btn{
+  color: black;
+  background-color: rgb(110, 110, 110);
+}
+.logout-btn:hover {
+  background-color: #fbfafb;
+  transform: scale(1.05);
+}

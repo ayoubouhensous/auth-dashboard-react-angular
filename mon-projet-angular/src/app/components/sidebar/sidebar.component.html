@@ -1,0 +1,19 @@
+<aside [class.collapsed]="isCollapsed" class="sidebar">
+  <ul class="menu">
+    <li>
+      <a routerLink="/dashboard">
+        <i class="fas fa-tachometer-alt"></i> <span *ngIf="!isCollapsed">Dashboard</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/products">
+        <i class="fas fa-boxes"></i> <span *ngIf="!isCollapsed">Products</span>
+      </a>
+    </li>
+    <li>
+      <a routerLink="/upload">
+        <i class="fas fa-upload"></i> <span *ngIf="!isCollapsed">Upload File</span>
+      </a>
+    </li>
+  </ul>
+</aside>
